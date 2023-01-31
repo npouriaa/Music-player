@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #dfe7ef;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-con{
+    padding: 10px;
+    width: 450px;
+    height: 600px;
+    background-color: #eef3f7;
+    border-radius: 15px;
+    box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
+}
+
+.f{
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+.cover{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 15px;
+    top: 30px;
+    left: -75px;
+    box-shadow: 0px 10px 40px 0px rgba(76, 70, 124, 0.5);
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.buttons{
+    width: 140px;
+    height: 100%;
+    position: absolute;
+    right: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.buttons button svg{
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    position: absolute;
+    color: #ACB8CC;
+    transition: all .3s;
+}
+
+.buttons button::before{
+    content: "";
+    box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
+    border-radius: 50%;
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+button:hover::before{
+    width: 70px;
+    height: 70px;
+}
+#like:hover svg{
+    color: #ff0000;
+}
+
+button:hover svg{
+    color: #6c2de1;
+}
+
+.redColor{
+    color: #ff0000;
+}
+
+.Sname-artist{
+    width: 100%;
+    height: 15%;
+    color: #949ba9;
+    padding: 10px;
+}
+
+.Sname-artist h3{
+    color: #9ea8b9;
+}
+
+.audio-con{
+    width: 100%;
+    height: 15%;
+    padding: 10px;
+}
+
+.progress-container{
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 6px;
+    background-color: #ACB8CC;
+    cursor: pointer;
+}
+
+#progress{
+    transition: width .1s linear;
+    border-radius: 5px;
+    width: 0;
+    height: 100%;
+    background-color: red;
+}
+
+.du-con , .cur-con{
+    color: #9ea8b9;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cur-con{
+    padding: 10px;
+    justify-content: flex-start;
+}

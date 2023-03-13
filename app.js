@@ -30,7 +30,7 @@ const songs = [
   {
     SName: "Chandelier",
     artist: "Sia",
-    src: "http://dl.mediak.ir/Sia%20-%20Chandelier.mp3",
+    src: "https://dl.musiceman.net/Music/2021/11/02/2021sia.mp3",
     cover: "./images/3.jpg",
   },
 ];
